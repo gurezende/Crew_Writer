@@ -1,0 +1,60 @@
+mystyle:
+  description: >
+    Read the PDFs in the knowledge base and mimic the style of the writer.
+  expected_output: >
+    A set of instructions and guidelines about tone, mood, vocabulary, and grammar to guide the Planner and the Content Writer to write the blog post.
+  agent: writer_style
+
+
+plan:
+  description: >
+    Conduct a research about documentation and examples of {topic} 
+    Make sure you find interesting and relevant information.
+    Look for good tips and hacks that will help the audience to learn the topic.
+    You can also find some good examples of how to use {topic} in real life.
+  expected_output: >
+    1. A comprehensive content plan document with a detailed outline
+    2. Audience analysis
+    3. Include SEO keywords and relevant data or sources to write the article.
+  agent: planner
+
+write:
+  description: >
+    1. Use the content plan to craft a compelling blog post on {topic}.
+    2. Incorporate SEO keywords naturally. 
+    3. Sections/Subtitles are properly named in an engaging manner. Make sure to add Introduction, Problem Statement, Code, Before You Go, References.
+    4. Add a summarizing conclusion - This is the "Before You Go" section.
+    5. Proofread for grammatical errors and alignment with the writer's style.
+    6. Use analogies to make the article more engaging and complex concepts easier to understand.
+  expected_output: >
+    A well-written blog post in markdown format, ready for publication.
+    The article must be within a 6 to 10 minutes read.
+    Each section must have at least 2 paragraphs.
+    When writing code, you will write a snippet of code and explain what it does. Be careful to not add a huge snippet at a time. Break it in reasonable chunks.
+    In the examples, create a sample dataset for the code.
+    In the Before You Go section, you will write a conclusion that is engaging and factually accurate.
+  agent: content_writer
+  output_file: blog_post.md
+
+
+edit:
+  description: >
+    Proofread for grammatical errors and alignment with the writer's style.
+  expected_output: >
+    A well-written blog post in markdown format, ready for publication.
+    The article must be within a 6 to 10 minutes read.
+    Generate a picture based on the content to illustrate the blog post.
+  agent: editor
+
+
+illustrate:
+  description: >
+    Generate a picture about {topic}
+  expected_output: >
+    1. Understand the content of the blog post
+    2. Generate a picture in JPG format to illustrate the blog post
+  agent: illustrator
+  output_file: picture.jpg
+
+
+  
