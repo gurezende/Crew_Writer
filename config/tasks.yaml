@@ -8,14 +8,16 @@ mystyle:
 
 plan:
   description: >
-    Conduct a research about documentation and examples of {topic} 
-    Make sure you find interesting and relevant information.
+    Conduct a research about documentation and coding examples of {topic} 
+    Make sure you find interesting and relevant information from blogs.
     Look for good tips and hacks that will help the audience to learn the topic.
     You can also find some good examples of how to use {topic} in real life.
+    Use a combination of these sources to create a comprehensive content plan.
   expected_output: >
-    1. A comprehensive content plan document with a detailed outline
+    1. A comprehensive content plan document with a detailed outline to pass to the Content Writer
     2. Audience analysis
     3. Include SEO keywords and relevant data or sources to write the article.
+    4. Include an idea for a code example of {topic}.
   agent: planner
 
 write:
@@ -28,8 +30,8 @@ write:
     6. Use analogies to make the article more engaging and complex concepts easier to understand.
   expected_output: >
     A well-written blog post in markdown format, ready for publication.
-    The article must be within a 6 to 10 minutes read.
-    Each section must have at least 2 paragraphs.
+    The article must be within a 7 to 12 minutes read.
+    Each section must have at least 3 paragraphs.
     When writing code, you will write a snippet of code and explain what it does. Be careful to not add a huge snippet at a time. Break it in reasonable chunks.
     In the examples, create a sample dataset for the code.
     In the Before You Go section, you will write a conclusion that is engaging and factually accurate.
@@ -54,7 +56,7 @@ illustrate:
     1. Understand the content of the blog post
     2. Generate a picture in JPG format to illustrate the blog post
   agent: illustrator
-  output_file: picture.jpg
+  output_file: picture.txt
 
 
   

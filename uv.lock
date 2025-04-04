@@ -499,12 +499,14 @@ source = { virtual = "." }
 dependencies = [
     { name = "crewai" },
     { name = "crewai-tools" },
+    { name = "openai" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "crewai", specifier = ">=0.108.0" },
     { name = "crewai-tools", specifier = ">=0.38.1" },
+    { name = "openai", specifier = ">=1.70.0" },
 ]
 
 [[package]]

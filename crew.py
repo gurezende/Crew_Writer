@@ -21,16 +21,20 @@ pdfs = PDFKnowledgeSource(
 
 # LLMs
 llm = LLM(
-    model="groq/gemma2-9b-it",
-    api_key= os.environ.get("GROQ_API_KEY"),
+    # model="groq/qwen-qwq-32b",
+    # api_key= os.environ.get("GROQ_API_KEY"),
+    model= "gpt-4o",
+    api_key= os.environ.get("OPENAI_API_KEY"),
     temperature=0.4
 )
+
 
 dalle = DallETool(
     model="dall-e-3",
     quality="standard",
     n=1,
-    api_key= os.environ.get("OPENAI_API_KEY")
+    api_key= os.environ.get("OPENAI_API_KEY"),
+    image_description="create an illustration style image about {topic}"
 )
 
 
@@ -54,7 +58,7 @@ class BlogWriter():
     def planner(self) -> Agent:
         return Agent(
         config=self.agents_config['planner'],
-        verbose=1,
+        verbose=True,
         tools=[SerperDevTool()],
         llm=llm
         )
@@ -63,7 +67,8 @@ class BlogWriter():
     def content_writer(self) -> Agent:
         return Agent(
         config=self.agents_config['content_writer'],
-        verbose=1
+        verbose=1,
+        llm=llm
         )
     
     @agent
@@ -78,7 +83,8 @@ class BlogWriter():
         return Agent(
         config=self.agents_config['illustrator'],
         verbose=1,
-        tools=[dalle]
+        tools=[dalle],
+        llm=llm
         )
 
 
@@ -113,7 +119,7 @@ class BlogWriter():
     def illustrate(self) -> Task:
         return Task(
         config=self.tasks_config['illustrate'],
-        output_file='output/picture.jpg' # This is the file that will contain the picture.
+        output_file='output/picture.txt' # This is the file that will contain the link to the picture's.
         )
     
 
