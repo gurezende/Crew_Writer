@@ -27,9 +27,9 @@ The script sets up a `BlogWriter` class that inherits from `CrewBase`, providing
 2.  **Configuration Files:**
     -   Ensure that `config/agents.yaml` and `config/tasks.yaml` exist, defining the agents and tasks configurations.
 3.  **PDF Files:**
-    -   Place the PDF files (`article1.pdf`, etc.) in the root directory or adjust the `file_paths` in `PDFKnowledgeSource`.
+    -   Place the PDF files (`article1.pdf`, etc.) in the **knowledge** folder or adjust the `file_paths` in `PDFKnowledgeSource`.
 4.  **Output Directory:**
-    -   Create an `output` directory in the root directory to store the generated blog post and image links.
+    -   An `output` directory will be created by the agents in the root directory to store the generated blog post and image links.
 
 ## Code Explanation
 
