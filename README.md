@@ -81,3 +81,13 @@ The script will:
 * The blog post will be saved in output/blog_post.md (as defined in crew.py).
 * The image links will be saved in output/picture.txt (as defined in crew.py).
 * The inputs dictionary passed to kickoff() is used to provide initial data to the crew's tasks. Ensure that the keys match the expected input parameters in your task definitions.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Developer
+
+Project developed by Gustavo R Santos.
+Find me on [LinkedIn](https://www.linkedin.com/in/gurezende/).
+Portfolio and more about me: http://gustavorsantos.me
