@@ -8,6 +8,9 @@ This Python script utilizes the CrewAI framework to automate the creation of a b
 
 The script sets up a `BlogWriter` class that inherits from `CrewBase`, providing a structured approach to defining agents and tasks. It leverages LLMs (Language Learning Models) and tools like SerperDev and Dall-E to generate content and illustrations.
 
+### Crew Flow
+![](output/agents_crew_flow.png)
+
 ## Dependencies
 
 -   `warnings`: For suppressing warnings.
