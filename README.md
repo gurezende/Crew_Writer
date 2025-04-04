@@ -9,7 +9,7 @@ This Python script utilizes the CrewAI framework to automate the creation of a b
 The script sets up a `BlogWriter` class that inherits from `CrewBase`, providing a structured approach to defining agents and tasks. It leverages LLMs (Language Learning Models) and tools like SerperDev and Dall-E to generate content and illustrations.
 
 ### Project Walk-Through
-There is a blog post in **Towards Data Science** explaining in details how this project was developed.
+There is a blog post in **Towards Data Science** explaining in details how this project was developed.<br>
 [Creating an AI Agent to Write Blog Posts with CrewAI](https://towardsdatascience.com/creating-an-ai-agent-to-write-blog-posts-with-crewai/)
 
 ### Crew Flow
