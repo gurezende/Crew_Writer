@@ -88,6 +88,6 @@ This project is licensed under the MIT License.
 
 ## Developer
 
-Project developed by Gustavo R Santos.
-Find me on [LinkedIn](https://www.linkedin.com/in/gurezende/).
-Portfolio and more about me: http://gustavorsantos.me
+Project developed by Gustavo R Santos.<br>
+Find me on [LinkedIn](https://www.linkedin.com/in/gurezende/).<br>
+Portfolio and more about me: http://gustavorsantos.me<br>
